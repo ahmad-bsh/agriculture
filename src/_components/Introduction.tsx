@@ -20,8 +20,7 @@ const FeatureCard = ({ name, description, imageUrl }: IFeature) => {
     <div className="card max-w-96 bg-base-100 shadow-xl">
       <div className="card-body">
         <h2
-          className={`${coveredByYourGrace.className} text-amber-500 text-center text-2xl`}
-        >
+          className={`${coveredByYourGrace.className} text-amber-500 text-center text-2xl`}>
           {name}
         </h2>
         <p className="sm:text-3xl xl:text-4xl font-bold text-center">
@@ -103,11 +102,10 @@ const IntroDescription = () => {
     <div className="flex items-center">
       <div className="w-full flex flex-col gap-3 mt-10 px-2 xl:mt-0 xl:px-0">
         <div
-          className={`${coveredByYourGrace.className} text-amber-500 text-xl`}
-        >
+          className={`${coveredByYourGrace.className} text-amber-500 text-xl`}>
           Our Introduction
         </div>
-        <div className="text-2xl xl:text-5xl font-bold xl:font-medium">
+        <div className="text-2xl xl:text-5xl font-extrabold">
           Agriculture & Organic Product Farm
         </div>
         <div className="text-green-600 text-xl font-medium">
