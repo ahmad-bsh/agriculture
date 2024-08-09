@@ -21,7 +21,7 @@ export default function Projects() {
           <div className="text-2xl sm:text-4xl font-bold ">Projects</div>
         </div>
       </Hero>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto p-4 pt-10 pb-20">
         {projects.map((project) => (
           <Link href={`/projects/${project.slug}`} key={project.slug}>
             <div className="aspect-[370/570] max-w-xl relative w-full">

@@ -46,8 +46,8 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
           />
         </div>
 
-        <div className="flex items-start gap-4">
-          <div className="w-2/3 space-y-5">
+        <div className="flex items-start gap-4 flex-col md:flex-row">
+          <div className="w-full md:w-2/3 space-y-5">
             <h3 className="font-bold text-3xl">
               {projects
                 .find((project) => project.slug === params.slug)
@@ -104,7 +104,7 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
               remaining essentially unchanged.{" "}
             </p>
           </div>
-          <div className="w-1/3 border sticky top-2 card shadow-md">
+          <div className="w-full md:w-1/3 border sticky top-2 card shadow-md">
             <div className="card-body space-y-2.5">
               <div>
                 <p className="text-gray-800">Services:</p>
@@ -136,8 +136,7 @@ const ProjectDetail = ({ params }: { params: { slug: string } }) => {
         </div>
         <div className="space-y-5">
           <div
-            className={`${coveredByYourGrace.className} text-amber-500 text-2xl text-center mt-20`}
-          >
+            className={`${coveredByYourGrace.className} text-amber-500 text-2xl text-center mt-20`}>
             Recently Completed
           </div>
 
