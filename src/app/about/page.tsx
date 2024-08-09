@@ -128,7 +128,9 @@ export default function About() {
           </div>
           <div className="max-w-5xl mx-auto px-5 flex flex-col md:flex-row my-5 w-full gap-5">
             {testimonials.map((testimonial) => (
-              <div className="flex gap-10 p-5 bg-white rounded-md shadow-md">
+              <div
+                className="flex gap-10 p-5 bg-white rounded-md shadow-md"
+                key={testimonial.user.name}>
                 <div className="relative aspect-[140/184] w-full ">
                   <Image
                     src={testimonial.user.image}
